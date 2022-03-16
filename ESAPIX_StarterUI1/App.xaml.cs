@@ -23,7 +23,8 @@ namespace ESAPX_StarterUI
         private IESAPIService _esapiServ;
 
         //Disable if you don't want patient selection
-        public bool IsPatientSelectionEnabled { get; } = true;
+        //public bool IsPatientSelectionEnabled { get; } = true;
+        public bool IsPatientSelectionEnabled { get; } = false;
 
         private string[] _args;
 
@@ -90,7 +91,7 @@ namespace ESAPX_StarterUI
             {
                 AppComThread.Instance.Dispose();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
             }
